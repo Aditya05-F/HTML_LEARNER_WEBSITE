@@ -70,38 +70,56 @@
 
                 <h3>3.1 Text Input</h3>
                 <pre>&lt;input type="text" name="firstname"&gt;</pre>
+                NAME
+                <input type="text" name="firstname" placeholder="YOUR NAME">
 
                 <h3>3.2 Password Input</h3>
                 <pre>&lt;input type="password" name="password"&gt;</pre>
+                PASSWORD
+                <input type="password" name="password" placeholder="********">
 
                 <h3>3.3 Email Input</h3>
                 <pre>&lt;input type="email" name="email"&gt;</pre>
+                EMAIL:
+                <input type="email" name="email">
 
                 <h3>3.4 Number Input</h3>
                 <pre>&lt;input type="number" name="age" min="1" max="100"&gt;</pre>
-
+                <input type="number" name="age" min="1" max="100">
                 <h3>3.5 Radio Buttons</h3>
                 <pre>&lt;input type="radio" name="gender" value="male"&gt; Male
 &lt;input type="radio" name="gender" value="female"&gt; Female</pre>
+                <input type="radio" name="gender" value="male">MALE
+                <input type="radio" name="gender" value="female">FEMALE
 
                 <h3>3.6 Checkboxes</h3>
                 <pre>&lt;input type="checkbox" name="subscribe" value="yes"&gt; Subscribe to newsletter</pre>
+                <input type="checkbox" name="subscribe" value="yes"> Subscribe to newsletter
 
                 <h3>3.7 File Upload</h3>
                 <pre>&lt;input type="file" name="profile_pic"&gt;</pre>
+                <input type="file" name="profile_pic">
 
                 <h3>3.8 Date Input</h3>
                 <pre>&lt;input type="date" name="dob"&gt;</pre>
+                <input type="date" name="dob">
 
                 <h3>3.9 Buttons</h3>
                 <pre>&lt;input type="submit" value="Send"&gt;
 &lt;input type="reset" value="Clear"&gt;
 &lt;button type="button"&gt;Click Me&lt;/button&gt;</pre>
+                <form>
+                    <input type="submit" value="Send">
+                    <input type="reset" value="Clear">
+                    <button type="button">Click Me</button>
+                </form>
 
                 <h2>4. Labels and Accessibility</h2>
                 <p>Use <code>&lt;label&gt;</code> to associate text with form fields for better accessibility.</p>
                 <pre>&lt;label for="email"&gt;Email Address:&lt;/label&gt;
 &lt;input type="email" id="email" name="email"&gt;</pre>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email">
 
                 <h2>5. Grouping Fields</h2>
                 <p>Use <code>&lt;fieldset&gt;</code> and <code>&lt;legend&gt;</code> to group related fields.</p>
@@ -112,6 +130,13 @@
     &lt;label&gt;Age:&lt;/label&gt;
     &lt;input type="number" name="age"&gt;
 &lt;/fieldset&gt;</pre>
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label>Name:</label>
+                    <input type="text" name="name"><br>
+                    <label>Age:</label>
+                    <input type="number" name="age">
+                </fieldset>
 
                 <h2>6. Select Dropdowns</h2>
                 <pre>&lt;label&gt;Country:&lt;/label&gt;
@@ -120,10 +145,18 @@
     &lt;option value="india"&gt;India&lt;/option&gt;
     &lt;option value="uk"&gt;United Kingdom&lt;/option&gt;
 &lt;/select&gt;</pre>
+                <label>Country:</label>
+                <select name="country">
+                    <option value="usa">United States</option>
+                    <option value="india">India</option>
+                    <option value="uk">United Kingdom</option>
+                </select>
 
                 <h2>7. Textarea</h2>
                 <pre>&lt;label&gt;Comments:&lt;/label&gt;
 &lt;textarea name="comments" rows="4" cols="50"&gt;&lt;/textarea&gt;</pre>
+                <label>Comments:</label>
+                <textarea name="comments" rows="4" cols="50"></textarea>
 
                 <h2>8. Form Validation</h2>
                 <p>You can add attributes to inputs to require data or limit format:</p>
@@ -133,23 +166,33 @@
                     <li><code>pattern</code> – Use regular expressions to validate input.</li>
                 </ul>
                 <pre>&lt;input type="text" name="username" required minlength="3" maxlength="15"&gt;</pre>
+                <input type="text" name="username" required minlength="3" maxlength="15" placeholder="Enter username">
 
                 <h2>9. Advanced Form Features</h2>
 
                 <h3>9.1 Hidden Fields</h3>
                 <pre>&lt;input type="hidden" name="userid" value="12345"&gt;</pre>
+                <!-- Hidden field doesn't show in form -->
+                <form>
+                    <input type="hidden" name="userid" value="12345">
+                    <p>(Hidden field is not visible)</p>
+                </form>
 
                 <h3>9.2 Multiple Inputs</h3>
                 <pre>&lt;input type="file" name="documents" multiple&gt;</pre>
+                <input type="file" name="documents" multiple>
 
                 <h3>9.3 Email with Multiple Addresses</h3>
                 <pre>&lt;input type="email" name="emails" multiple&gt;</pre>
+                <input type="email" name="emails" multiple placeholder="Enter multiple emails">
 
                 <h3>9.4 Search Field</h3>
                 <pre>&lt;input type="search" name="query"&gt;</pre>
+                <input type="search" name="query" placeholder="Search...">
 
                 <h3>9.5 URL Input</h3>
                 <pre>&lt;input type="url" name="website"&gt;</pre>
+                <input type="url" name="website" placeholder="https://example.com">
 
                 <h2>10. Form Submission Methods</h2>
                 <p>There are two common methods for submitting forms:</p>
@@ -193,6 +236,40 @@
         &lt;input type="reset" value="Clear"&gt;
     &lt;/fieldset&gt;
 &lt;/form&gt;</pre>
+                <form action="submit.html" method="post">
+                    <fieldset>
+                        <legend>User Information</legend>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required><br>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required><br>
+
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" id="dob" name="dob"><br>
+
+                        <label>Gender:</label>
+                        <input type="radio" name="gender" value="male"> Male
+                        <input type="radio" name="gender" value="female"> Female<br>
+
+                        <label>Hobbies:</label>
+                        <input type="checkbox" name="hobby" value="reading"> Reading
+                        <input type="checkbox" name="hobby" value="sports"> Sports<br>
+
+                        <label for="country">Country:</label>
+                        <select id="country" name="country">
+                            <option value="usa">USA</option>
+                            <option value="india">India</option>
+                            <option value="uk">UK</option>
+                        </select><br>
+
+                        <label for="comments">Comments:</label><br>
+                        <textarea id="comments" name="comments" rows="4" cols="40"></textarea><br>
+
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Clear">
+                    </fieldset>
+                </form>
 
                 <h2>12. Summary</h2>
                 <ul>
