@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page 1</title>
+</head>
+
+<body>
+
+    <table border="1" width="100%" height="100" cellspacing="0" cellpadding="10">
+        <tr height="100">
+            <td colspan="2" align="center">
+                <h1>My Competition Project</h1>
+                <nav>
+                    <a href="index.html">HOME</a>
+                    <a href="about.html">ABOUT</a>
+                </nav>
+            </td>
+        </tr>
+
+        <tr valign="top" height="530">
+            <td width="200">
+                <h3>Sidebar</h3>
+                <ul>
+                    <li><a href="index.html">INTRODUCTION</a></li><br>
+                    <li><a href="topic1.html">HTML BASICS</a></li><br>
+                    <li><a href="topic2.html">NESTED LIST AND TABLES</a></li><br>
+                    <li><a href="topic3.html">SEMANTIC TAGS</a></li><br>
+                    <li><a href="topic4.html">HTML FORMS</a></li><br>
+                    <li><a href="topic5.html">MEDIA TAG</a></li>
+                </ul>
+            </td>
+            <td>
+                <h2>HTML Forms From Beginner to Advance</h2>
+                <div align="center">
+                    <iframe src="IFRameLinks/video4.html" frameborder="0" height="350" width="580"></iframe>
+                </div>
+                <hr>
+                <!--NOTES FOR THE VIDOES-->
+                <p>
+                <h1>HTML Forms – Complete Learning Guide</h1>
+                <p>This page explains HTML forms from basic to advanced topics. It is a comprehensive guide for anyone
+                    learning how to create and use forms on web pages.</p>
+
+                <h2>1. What is an HTML Form?</h2>
+                <p>A form is a section in an HTML document that allows users to input and submit data to a server. Forms
+                    are used for registration, login, surveys, feedback, and much more.</p>
+
+                <h2>2. Basic Form Structure</h2>
+                <p>Every form starts with the <code>&lt;form&gt;</code> tag, which can include input elements and other
+                    form controls.</p>
+                <pre>&lt;form action="submit_page.html" method="post"&gt;
+    &lt;label&gt;Name:&lt;/label&gt;
+    &lt;input type="text" name="username"&gt;&lt;br&gt;
+    &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;</pre>
+                <p><b>Explanation:</b></p>
+                <ul>
+                    <li><code>action</code> – URL where the form data is sent.</li>
+                    <li><code>method</code> – How the data is sent (usually <code>post</code> or <code>get</code>).</li>
+                    <li><code>&lt;input&gt;</code> – Field where users can enter data.</li>
+                </ul>
+
+                <h2>3. Form Input Types</h2>
+                <p>HTML provides different input types to capture various kinds of data:</p>
+
+                <h3>3.1 Text Input</h3>
+                <pre>&lt;input type="text" name="firstname"&gt;</pre>
+
+                <h3>3.2 Password Input</h3>
+                <pre>&lt;input type="password" name="password"&gt;</pre>
+
+                <h3>3.3 Email Input</h3>
+                <pre>&lt;input type="email" name="email"&gt;</pre>
+
+                <h3>3.4 Number Input</h3>
+                <pre>&lt;input type="number" name="age" min="1" max="100"&gt;</pre>
+
+                <h3>3.5 Radio Buttons</h3>
+                <pre>&lt;input type="radio" name="gender" value="male"&gt; Male
+&lt;input type="radio" name="gender" value="female"&gt; Female</pre>
+
+                <h3>3.6 Checkboxes</h3>
+                <pre>&lt;input type="checkbox" name="subscribe" value="yes"&gt; Subscribe to newsletter</pre>
+
+                <h3>3.7 File Upload</h3>
+                <pre>&lt;input type="file" name="profile_pic"&gt;</pre>
+
+                <h3>3.8 Date Input</h3>
+                <pre>&lt;input type="date" name="dob"&gt;</pre>
+
+                <h3>3.9 Buttons</h3>
+                <pre>&lt;input type="submit" value="Send"&gt;
+&lt;input type="reset" value="Clear"&gt;
+&lt;button type="button"&gt;Click Me&lt;/button&gt;</pre>
+
+                <h2>4. Labels and Accessibility</h2>
+                <p>Use <code>&lt;label&gt;</code> to associate text with form fields for better accessibility.</p>
+                <pre>&lt;label for="email"&gt;Email Address:&lt;/label&gt;
+&lt;input type="email" id="email" name="email"&gt;</pre>
+
+                <h2>5. Grouping Fields</h2>
+                <p>Use <code>&lt;fieldset&gt;</code> and <code>&lt;legend&gt;</code> to group related fields.</p>
+                <pre>&lt;fieldset&gt;
+    &lt;legend&gt;Personal Information&lt;/legend&gt;
+    &lt;label&gt;Name:&lt;/label&gt;
+    &lt;input type="text" name="name"&gt;&lt;br&gt;
+    &lt;label&gt;Age:&lt;/label&gt;
+    &lt;input type="number" name="age"&gt;
+&lt;/fieldset&gt;</pre>
+
+                <h2>6. Select Dropdowns</h2>
+                <pre>&lt;label&gt;Country:&lt;/label&gt;
+&lt;select name="country"&gt;
+    &lt;option value="usa"&gt;United States&lt;/option&gt;
+    &lt;option value="india"&gt;India&lt;/option&gt;
+    &lt;option value="uk"&gt;United Kingdom&lt;/option&gt;
+&lt;/select&gt;</pre>
+
+                <h2>7. Textarea</h2>
+                <pre>&lt;label&gt;Comments:&lt;/label&gt;
+&lt;textarea name="comments" rows="4" cols="50"&gt;&lt;/textarea&gt;</pre>
+
+                <h2>8. Form Validation</h2>
+                <p>You can add attributes to inputs to require data or limit format:</p>
+                <ul>
+                    <li><code>required</code> – Makes the field mandatory.</li>
+                    <li><code>minlength</code>, <code>maxlength</code> – Restrict length.</li>
+                    <li><code>pattern</code> – Use regular expressions to validate input.</li>
+                </ul>
+                <pre>&lt;input type="text" name="username" required minlength="3" maxlength="15"&gt;</pre>
+
+                <h2>9. Advanced Form Features</h2>
+
+                <h3>9.1 Hidden Fields</h3>
+                <pre>&lt;input type="hidden" name="userid" value="12345"&gt;</pre>
+
+                <h3>9.2 Multiple Inputs</h3>
+                <pre>&lt;input type="file" name="documents" multiple&gt;</pre>
+
+                <h3>9.3 Email with Multiple Addresses</h3>
+                <pre>&lt;input type="email" name="emails" multiple&gt;</pre>
+
+                <h3>9.4 Search Field</h3>
+                <pre>&lt;input type="search" name="query"&gt;</pre>
+
+                <h3>9.5 URL Input</h3>
+                <pre>&lt;input type="url" name="website"&gt;</pre>
+
+                <h2>10. Form Submission Methods</h2>
+                <p>There are two common methods for submitting forms:</p>
+                <ul>
+                    <li><code>GET</code> – Appends data to the URL.</li>
+                    <li><code>POST</code> – Sends data in the request body securely.</li>
+                </ul>
+
+                <h2>11. Example – Complete Form</h2>
+                <pre>&lt;form action="submit.html" method="post"&gt;
+    &lt;fieldset&gt;
+        &lt;legend&gt;User Information&lt;/legend&gt;
+        &lt;label for="name"&gt;Name:&lt;/label&gt;
+        &lt;input type="text" id="name" name="name" required&gt;&lt;br&gt;
+
+        &lt;label for="email"&gt;Email:&lt;/label&gt;
+        &lt;input type="email" id="email" name="email" required&gt;&lt;br&gt;
+
+        &lt;label for="dob"&gt;Date of Birth:&lt;/label&gt;
+        &lt;input type="date" id="dob" name="dob"&gt;&lt;br&gt;
+
+        &lt;label&gt;Gender:&lt;/label&gt;
+        &lt;input type="radio" name="gender" value="male"&gt; Male
+        &lt;input type="radio" name="gender" value="female"&gt; Female&lt;br&gt;
+
+        &lt;label&gt;Hobbies:&lt;/label&gt;
+        &lt;input type="checkbox" name="hobby" value="reading"&gt; Reading
+        &lt;input type="checkbox" name="hobby" value="sports"&gt; Sports&lt;br&gt;
+
+        &lt;label for="country"&gt;Country:&lt;/label&gt;
+        &lt;select id="country" name="country"&gt;
+            &lt;option value="usa"&gt;USA&lt;/option&gt;
+            &lt;option value="india"&gt;India&lt;/option&gt;
+            &lt;option value="uk"&gt;UK&lt;/option&gt;
+        &lt;/select&gt;&lt;br&gt;
+
+        &lt;label for="comments"&gt;Comments:&lt;/label&gt;&lt;br&gt;
+        &lt;textarea id="comments" name="comments" rows="4" cols="40"&gt;&lt;/textarea&gt;&lt;br&gt;
+
+        &lt;input type="submit" value="Submit"&gt;
+        &lt;input type="reset" value="Clear"&gt;
+    &lt;/fieldset&gt;
+&lt;/form&gt;</pre>
+
+                <h2>12. Summary</h2>
+                <ul>
+                    <li>Forms collect and submit user data to websites.</li>
+                    <li>The <code>&lt;form&gt;</code> tag wraps input fields and controls.</li>
+                    <li>Input types include text, email, number, password, date, file, and more.</li>
+                    <li>Labels enhance accessibility.</li>
+                    <li>Fieldsets group related inputs.</li>
+                    <li>Validation ensures proper data before submission.</li>
+                    <li>Advanced inputs offer flexibility like multiple files, search, or hidden data.</li>
+                    <li>Forms can be submitted via GET or POST methods.</li>
+                </ul>
+
+                <p>This tutorial gives you everything you need to start building forms, from simple contact forms to
+                    complex, interactive forms on websites.</p>
+                </p>
+            </td>
+        </tr>
+
+        <tr height="100">
+            <td colspan="2" align="center">
+                <p>&copy; 2025 My Competition Project</p>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

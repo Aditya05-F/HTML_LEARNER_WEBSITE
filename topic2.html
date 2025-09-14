@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page 1</title>
+</head>
+
+<body>
+
+    <table border="1" width="100%" height="100" cellspacing="0" cellpadding="10">
+        <tr height="100">
+            <td colspan="2" align="center">
+                <h1>My Competition Project</h1>
+                <nav>
+                    <a href="index.html">HOME</a>
+                    <a href="about.html">ABOUT</a>
+                </nav>
+            </td>
+        </tr>
+
+        <tr valign="top" height="530">
+            <td width="200">
+                <h3>Sidebar</h3>
+                <ul>
+                    <li><a href="index.html">INTRODUCTION</a></li><br>
+                    <li><a href="topic1.html">HTML BASICS</a></li><br>
+                    <li><a href="topic2.html">NESTED LIST AND TABLES</a></li><br>
+                    <li><a href="topic3.html">SEMANTIC TAGS</a></li><br>
+                    <li><a href="topic4.html">HTML FORMS</a></li><br>
+                    <li><a href="topic5.html">MEDIA TAG</a></li>
+                </ul>
+            </td>
+            <td>
+                <h2>HTML Nested Lists & Tables</h2>
+                <div align="center">
+                    <iframe src="IFRameLinks/video2.html" frameborder="0" height="350" width="580"></iframe>
+                </div>
+                <hr>
+                <!--NOTES FOR THE VIDOES-->
+                <p>
+                <h1>HTML Lists and Tables</h1>
+                <p>This page provides information about how to use lists, nested lists, tables, and nested tables in
+                    HTML. It's intended for beginners learning HTML structure.</p>
+
+                <h2>1. Lists in HTML</h2>
+                <p>Lists are used to organize content in an ordered or unordered manner.</p>
+
+                <h3>1.1 Unordered List (<code>&lt;ul&gt;</code>)</h3>
+                <p>An unordered list displays items with bullet points.</p>
+                <pre><code>&lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                <ul>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                </ul>
+
+                <h3>1.2 Ordered List (<code>&lt;ol&gt;</code>)</h3>
+                <p>An ordered list displays items with numbers.</p>
+                <pre><code>&lt;ol&gt;
+    &lt;li&gt;First item&lt;/li&gt;
+    &lt;li&gt;Second item&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+                <ol>
+                    <li>First item</li>
+                    <li>Second item</li>
+                </ol>
+
+                <h3>1.3 Nested Lists</h3>
+                <p>You can nest one list inside another for hierarchical data.</p>
+                <pre><code>&lt;ul&gt;
+    &lt;li&gt;Fruits
+        &lt;ul&gt;
+            &lt;li&gt;Apple&lt;/li&gt;
+            &lt;li&gt;Banana&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;Vegetables
+        &lt;ul&gt;
+            &lt;li&gt;Carrot&lt;/li&gt;
+            &lt;li&gt;Peas&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                <ul>
+                    <li>Fruits
+                        <ul>
+                            <li>Apple</li>
+                            <li>Banana</li>
+                        </ul>
+                    </li>
+                    <li>Vegetables
+                        <ul>
+                            <li>Carrot</li>
+                            <li>Peas</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h2>2. Tables in HTML</h2>
+                <p>Tables are used to display data in rows and columns.</p>
+
+                <h3>2.1 Simple Table</h3>
+                <pre><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Name&lt;/th&gt;
+        &lt;th&gt;Age&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Alice&lt;/td&gt;
+        &lt;td&gt;25&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Bob&lt;/td&gt;
+        &lt;td&gt;30&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+                <table border="1" width="300">
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                    </tr>
+                    <tr>
+                        <td>Alice</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>Bob</td>
+                        <td>30</td>
+                    </tr>
+                </table>
+
+                <h3>2.2 Nested Tables</h3>
+                <p>You can embed a table inside another table cell to represent complex data.</p>
+                <pre><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Department&lt;/th&gt;
+        &lt;th&gt;Employees&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;HR&lt;/td&gt;
+        &lt;td&gt;
+            &lt;table&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Alice&lt;/td&gt;
+                    &lt;td&gt;Manager&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;John&lt;/td&gt;
+                    &lt;td&gt;Assistant&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+                <table border="1" >
+                    <tr>
+                        <th>Department</th>
+                        <th>Employees</th>
+                    </tr>
+                    <tr>
+                        <td>HR</td>
+                        <td>
+                            <table border="1" >
+                                <tr>
+                                    <td>Alice</td>
+                                    <td>Manager</td>
+                                </tr>
+                                <tr>
+                                    <td>John</td>
+                                    <td>Assistant</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+
+                <h2>Summary</h2>
+                <ul>
+                    <li><strong>Lists:</strong> Help organize content using <code>&lt;ul&gt;</code> or
+                        <code>&lt;ol&gt;</code>.</li>
+                    <li><strong>Nested Lists:</strong> Useful for representing hierarchical data.</li>
+                    <li><strong>Tables:</strong> Allow displaying structured data in rows and columns.</li>
+                    <li><strong>Nested Tables:</strong> Useful for representing complex relationships within table
+                        cells.</li>
+                </ul>
+                <p>This tutorial covers the basic structure and usage of lists and tables in HTML to help learners start
+                    building structured web pages.</p>
+                </p>
+            </td>
+        </tr>
+
+        <tr height="100">
+            <td colspan="2" align="center">
+                <p>&copy; 2025 My Competition Project</p>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

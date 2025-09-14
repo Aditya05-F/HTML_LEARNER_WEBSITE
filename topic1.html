@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page 1</title>
+</head>
+
+<body>
+
+    <table border="1" width="100%" height="100" cellspacing="0" cellpadding="10">
+        <tr height="100">
+            <td colspan="2" align="center">
+                <h1>My Competition Project</h1>
+                <nav>
+                    <a href="index.html">HOME</a>
+                    <a href="about.html">ABOUT</a>
+                </nav>
+            </td>
+        </tr>
+
+        <tr valign="top" height="530">
+            <td width="200">
+                <h3>Sidebar</h3>
+                <ul>
+                    <li><a href="index.html">INTRODUCTION</a></li><br>
+                    <li><a href="topic1.html">HTML BASICS</a></li><br>
+                    <li><a href="topic2.html">NESTED LIST AND TABLES</a></li><br>
+                    <li><a href="topic3.html">SEMANTIC TAGS</a></li><br>
+                    <li><a href="topic4.html">HTML FORMS</a></li><br>
+                    <li><a href="topic5.html">MEDIA TAG</a></li>
+                </ul>
+            </td>
+            <td>
+                <h2>What is HTML | Heading | Paragraph | Anchor tag | Image element</h2>
+                <div align="center">
+                    <iframe src="IFRameLinks/video1.html" frameborder="0" height="350" width="580"></iframe>
+                </div>
+                <hr>
+                <!--NOTES FOR THE VIDOES-->
+                <p>
+
+                <h1>HTML : Hyper Text Markup Language</h1>
+                <p>HTML stands for <strong>HyperText Markup Language</strong>. It is the standard language used to
+                    create and structure the content of a webpage.</p>
+
+                <h2>HyperText</h2>
+                <p>This refers to the ability to create links that connect web pages to one another, making the web a
+                    connected "web" of information.</p>
+
+                <h2>Markup Language</h2>
+                <p>This means you use "tags" to surround your content, giving that content meaning and structure. You
+                    are "marking up" a plain text document.</p>
+
+                <h2>First Website</h2>
+                <p><a href="https://info.cern.ch/hypertext/WWW/TheProject.html"
+                        target="_blank">https://info.cern.ch/hypertext/WWW/TheProject.html</a></p>
+
+                <h2>Install Required Software</h2>
+                <h3>1: Install Visual Studio Code</h3>
+                <p>This is a free piece of software from Microsoft that you will use to write your code.</p>
+                <p><a href="https://code.visualstudio.com/" target="_blank">Download VS Code</a></p>
+
+                <h3>2: Install Visual Studio Code Extensions</h3>
+                <ul>
+                    <li><a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server"
+                            target="_blank">Live Preview</a></li>
+                    <li><a href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode"
+                            target="_blank">Prettier</a></li>
+                </ul>
+
+                <h2>Live Server Basics</h2>
+
+                <h3>1. The Heading (&lt;h1&gt; to &lt;h6&gt;)</h3>
+                <p><strong>What it is:</strong> Headings are tags used to define titles and subtitles on your page. They
+                    are crucial for creating a logical hierarchy and outline for your content.</p>
+                <pre><code>&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+&lt;h4&gt;Heading 4&lt;/h4&gt;
+&lt;h5&gt;Heading 5&lt;/h5&gt;
+&lt;h6&gt;Heading 6&lt;/h6&gt;</code></pre>
+                <ul>
+                    <li><code>&lt;h1&gt;</code>: The most important heading, typically used only once per page.</li>
+                    <li><code>&lt;h2&gt;</code>: A major section heading.</li>
+                    <li><code>&lt;h3&gt;</code>: A sub-section heading under an <code>&lt;h2&gt;</code>.</li>
+                    <li>...and so on down to <code>&lt;h6&gt;</code>.</li>
+                </ul>
+                <p><strong>The Purpose:</strong> To structure your document logically for humans and search engines. It
+                    is not just for making text big; it gives the text <em>structural importance</em>.</p>
+
+                <h3>2. The Paragraph (&lt;p&gt;)</h3>
+                <p><strong>What it is:</strong> The most common tag used to group sentences and blocks of text together.
+                </p>
+                <p><strong>The Tag:</strong> <code>&lt;p&gt;</code></p>
+                <p><strong>The Purpose:</strong> Defines a separate paragraph. Browsers automatically add space before
+                    and after a <code>&lt;p&gt;</code> element.</p>
+                <pre><code>&lt;p&gt;This is the first paragraph. It contains several sentences about a topic.&lt;/p&gt;
+
+&lt;p&gt;This is a second, separate paragraph. The browser will display it with a space between it and the first one.&lt;/p&gt;</code></pre>
+
+                <h3>3. HTML Horizontal Rules</h3>
+                <p>The <code>&lt;hr&gt;</code> tag defines a thematic break in an HTML page, usually rendered as a
+                    horizontal line.</p>
+                <pre><code>&lt;p&gt;This is the first topic.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;This is a completely different topic.&lt;/p&gt;</code></pre>
+
+                <h3>4. The Line Break Tag: &lt;br&gt;</h3>
+                <p>This tag tells the browser to break the line and continue writing on the next line.</p>
+                <p><strong>Purpose:</strong> Creates a single line break.</p>
+                <pre><code>&lt;p&gt;221B Baker Street&lt;br&gt;
+London, England&lt;/p&gt;</code></pre>
+
+               
+
+                <h3>5. The Anchor Tag (&lt;a&gt;)</h3>
+                <p><strong>What it is:</strong> The anchor tag creates hyperlinks to other pages, files, or within the
+                    same document.</p>
+                <p><strong>Tag:</strong> <code>&lt;a&gt;</code></p>
+                <p><strong>Purpose:</strong> Makes text or image clickable. Requires an <code>href</code> attribute
+                    (hypertext reference).</p>
+                <pre><code>&lt;a href="https://www.coderarmy.in/"&gt;Visit Coder Army&lt;/a&gt;</code></pre>
+
+                <h4>HTML Links - The target Attribute</h4>
+                <p><strong>By default:</strong> links open in the same browser tab.</p>
+                <p><strong>target values:</strong></p>
+                <ul>
+                    <li><code>_self</code> - Default, opens in same tab.</li>
+                    <li><code>_blank</code> - Opens in a new tab or window.</li>
+                </ul>
+
+                <h3>6. The Image Tag (&lt;img&gt;)</h3>
+                <p><strong>What it is:</strong> The Image tag is self-closing and used to embed images.</p>
+                <p><strong>Purpose:</strong> To display a visual image. Requires attributes:</p>
+                <ul>
+                    <li><code>src</code>: Path or URL to the image file.</li>
+                    <li><code>alt</code>: Alternative text (for accessibility and fallback).</li>
+                </ul>
+
+                </p>
+            </td>
+        </tr>
+
+        <tr height="100">
+            <td colspan="2" align="center">
+                <p>&copy; 2025 My Competition Project</p>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page 1</title>
+</head>
+
+<body>
+
+    <table border="1" width="100%" height="100" cellspacing="0" cellpadding="10">
+        <tr height="100">
+            <td colspan="2" align="center">
+                <h1>My Competition Project</h1>
+                <nav>
+                    <a href="index.html">HOME</a>
+                    <a href="about.html">ABOUT</a>
+                </nav>
+            </td>
+        </tr>
+
+        <tr valign="top" height="530">
+            <td width="200">
+                <h3>Sidebar</h3>
+                <ul>
+                    <li><a href="index.html">INTRODUCTION</a></li><br>
+                    <li><a href="topic1.html">HTML BASICS</a></li><br>
+                    <li><a href="topic2.html">NESTED LIST AND TABLES</a></li><br>
+                    <li><a href="topic3.html">SEMANTIC TAGS</a></li><br>
+                    <li><a href="topic4.html">HTML FORMS</a></li><br>
+                    <li><a href="topic5.html">MEDIA TAG</a></li>
+                </ul>
+            </td>
+            <td>
+                <h2>File Path in HTML | HTML BoilerPlate Code | DIV + Class + ID </h2>
+                <div align="center">
+                    <iframe src="IFRameLinks/video3.html" frameborder="0" height="350" width="580"></iframe>
+                </div>
+                <hr>
+                <!--NOTES FOR THE VIDOES-->
+                <p>
+                <h1>HTML Boilerplate, Div, Class, ID and File Paths</h1>
+                <p>This page provides information about the basic structure of an HTML document (boilerplate code), how
+                    to use <code>&lt;div&gt;</code>, <code>class</code>, and <code>id</code> attributes, and explains
+                    how file paths work in HTML.</p>
+
+                <h2>1. HTML Boilerplate Code</h2>
+                <p>The boilerplate code is the basic template every HTML page starts with. It ensures the correct
+                    structure and defines important metadata.</p>
+                <pre>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+                <ul>
+                    <li><code>&lt;!DOCTYPE html&gt;</code> – Defines this document as an HTML5 document.</li>
+                    <li><code>&lt;html lang="en"&gt;</code> – Root element with language set to English.</li>
+                    <li><code>&lt;head&gt;</code> – Contains metadata like character encoding and page title.</li>
+                    <li><code>&lt;meta charset="UTF-8"&gt;</code> – Defines character encoding.</li>
+                    <li><code>&lt;title&gt;</code> – Sets the browser tab’s title.</li>
+                    <li><code>&lt;body&gt;</code> – Contains visible content of the webpage.</li>
+                </ul>
+
+                <h2>2. The &lt;div&gt; Tag</h2>
+                <p>The <code>&lt;div&gt;</code> tag is a block-level container used to group content together.</p>
+                <pre>&lt;div&gt;
+    &lt;h2&gt;Section Title&lt;/h2&gt;
+    &lt;p&gt;Some text inside a division.&lt;/p&gt;
+&lt;/div&gt;</pre>
+
+                <h2>3. The <code>class</code> Attribute</h2>
+                <p>Used to assign one or more names to an element for styling or scripting purposes.</p>
+                <pre>&lt;div class="info-section"&gt;
+    &lt;p&gt;This is an information block.&lt;/p&gt;
+&lt;/div&gt;</pre>
+
+                <h2>4. The <code>id</code> Attribute</h2>
+                <p>Used to uniquely identify an element within a page.</p>
+                <pre>&lt;div id="main-content"&gt;
+    &lt;p&gt;This is the main content area.&lt;/p&gt;
+&lt;/div&gt;</pre>
+
+                <h2>5. HTML File Paths</h2>
+                <p>File paths are used to link files like images, stylesheets, or other pages in HTML.</p>
+
+                <h3>5.1 What is a File Path?</h3>
+                <p>A file path is the location where a file is stored on your computer or server. It tells the browser
+                    where to find that file.</p>
+
+                <h3>5.2 Changing Directory</h3>
+                <p>Directories (or folders) help organize files. You can navigate between directories using paths:</p>
+                <ul>
+                    <li><code>./</code> means the current directory.</li>
+                    <li><code>../</code> means move up one directory.</li>
+                </ul>
+                <pre>&lt;a href="../index.html"&gt;Go to Home&lt;/a&gt;</pre>
+                <p>This link goes up one folder and opens <code>index.html</code>.</p>
+
+                <h3>5.3 Relative File Path</h3>
+                <p>A relative path is based on the location of the current file. It is useful when linking files within
+                    the same project or directory structure.</p>
+                <pre>&lt;img src="images/picture.jpg" alt="Example Image"&gt;</pre>
+                <p>This means the file <code>picture.jpg</code> is inside the <code>images</code> folder relative to the
+                    current file.</p>
+
+                <h3>5.4 Absolute File Path</h3>
+                <p>An absolute path is the full path to the file starting from the root or including the domain name
+                    when linking resources online.</p>
+                <pre>&lt;img src="https://example.com/images/picture.jpg" alt="Example Image"&gt;</pre>
+                <p>This path points directly to the resource, no matter where the current file is located.</p>
+
+                <h3>5.5 Examples</h3>
+                <p>Assuming the following directory structure:</p>
+                <pre>
+project/
+├── index.html
+├── about.html
+└── images/
+    └── picture.jpg
+    </pre>
+                <p>Links from <code>index.html</code>:</p>
+                <ul>
+                    <li>Relative path to image: <code>&lt;img src="images/picture.jpg"&gt;</code></li>
+                    <li>Relative path to about page: <code>&lt;a href="about.html"&gt;About&lt;/a&gt;</code></li>
+                </ul>
+
+                <p>If you're in <code>about.html</code> and want to link back to <code>index.html</code>, use:</p>
+                <pre>&lt;a href="index.html"&gt;Home&lt;/a&gt;</pre>
+
+                <p>To reference an image using an absolute path:</p>
+                <pre>&lt;img src="https://example.com/project/images/picture.jpg" alt="Example Image"&gt;</pre>
+
+                <h2>6. Summary</h2>
+                <ul>
+                    <li><b>HTML Boilerplate:</b> Provides the structure required for any HTML document.</li>
+                    <li><b>&lt;div&gt;:</b> Groups content sections together.</li>
+                    <li><b>class:</b> Assigns names to elements for styling and scripting.</li>
+                    <li><b>id:</b> Assigns a unique identifier to an element.</li>
+                    <li><b>File Paths:</b> Tell the browser where to find linked files.</li>
+                    <li><b>Relative Path:</b> Location relative to the current file.</li>
+                    <li><b>Absolute Path:</b> Complete path, starting from the root or with the full URL.</li>
+                </ul>
+
+                <p>This tutorial covers the basic structure, organization, and linking of content in HTML for beginners.
+                </p>
+                </p>
+            </td>
+        </tr>
+
+        <tr height="100">
+            <td colspan="2" align="center">
+                <p>&copy; 2025 My Competition Project</p>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
