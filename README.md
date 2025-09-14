@@ -15,12 +15,7 @@ This is an educational website about web development fundamentals, created as a 
 ├── topic2.html         # Lists and tables (nested structures)
 ├── topic3.html         # HTML boilerplate, divs, classes, IDs, file paths
 ├── topic4.html         # HTML forms (comprehensive guide)
-├── topic5.html         # Media tags (video and audio)
-└── IFrameLinks/        # Directory containing video embed files
-    ├── video0.html
-    ├── video1.html
-    ├── video2.html
-    └── video3.html
+└── topic5.html         # Media tags (video and audio)
 ```
 
 ## Features
