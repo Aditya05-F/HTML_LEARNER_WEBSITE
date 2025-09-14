@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <a href="index.html">HOME</a>
+    <hr>
+    <h2>FORMS IMPLEMENTED</h2>
+    <HR>
+    </HR>
+    <div>
+        <h1>University Registration Form</h1>
+        <hr>
+        <form action="">
+            <h2>Personal Detail</h2>
+            <label for="fname">First Name:</label>
+            <input type="text" name="studentfName" id="fname" placeholder="First Name">
+            <br> <br>
+            <label for="lname">Last Name:</label>
+            <input type="text" name="studentlName" id="lname" placeholder="Last Name">
+            <br> <br>
+            <label for="date">Birth Date:</label>
+            <input type="date" name="birthDate" id="date">
+            <h3>Select Gender</h3>
+            <ul>
+                <li>
+                    <label for="m">Male</label>
+                    <input type="radio" name="g" id="m" value="male">
+
+                </li>
+                <li>
+                    <label for="f">Female</label>
+                    <input type="radio" name="g" id="f" value="female">
+                </li>
+                <li>
+                    <label for="o">Other</label>
+                    <input type="radio" name="g" id="o" value="other">
+                </li>
+            </ul>
+            <label for="up">Choose Photo:</label>
+            <input type="file" name="up" id="">
+            <hr>
+            <h2>Contact Information</h2>
+            <label for="">Mail Address:</label>
+            <input type="email" name="" id="">
+            <br><br>
+            <label for="ph">Phone Number</label>
+            <input type="tel" name="" id="ph">
+            <br>
+            <label for="add">Current Address</label>
+            <br>
+            <textarea name="Address" id="add" rows="5" cols="50"></textarea>
+            <br>
+            <hr>
+            <h2>Course Information</h2>
+            <label for="course">Select Your Course:</label>
+            <select name="course" id="course">
+                <option value="cse">CSE</option>
+                <option value="Civil">Civil</option>
+                <option value="eee">Electrical</option>
+            </select>
+            <h3>Extra Curricular Activity</h3>
+            <input type="checkbox" id="g" value="sports">
+            <label for="g">Sports</label>
+            <input type="checkbox" id="m" value="music">
+            <label for="m">Music</label>
+            <input type="checkbox" id="gy">
+            <label for="gy" value="gym">Gym</label>
+
+            <h2>Create Account</h2>
+            <label for="un">User Name</label>
+            <input type="text" name="userName" id="un">
+            <br><br>
+
+            <label for="pa">Password:</label>
+            <input type="password" name="" id="pa">
+            <br> <br>
+            <input type="checkbox" name="t&c" id="cond" value="yes" required>
+            <label for="cond">I agree To The Term And Condition.</label> <br> <br>
+            <button type="reset">Clear Form</button>
+            <button type="submit">Submit Form</button>
+            <hr>
+
+
+
+        </form>
+        <hr>
+        <br>
+        <h2>MEDIA TAG IMPLEMENTED</h2>
+        <hr><br>
+        <div>
+            <h3>Video Tag</h3>
+            <video src="PicVidoes/eg_vidoe.mp4" width="360" height="240" controls loop>Natures Video</video>
+            <h3>Audio Tag</h3>
+            <audio src="PicVidoes/sample-12s.mp3" controls lang="en"></audio>
+        </div>
+
+    </div>
+</body>
+
+</html>
